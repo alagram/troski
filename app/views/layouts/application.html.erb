@@ -13,6 +13,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav>
+    <%= link_to "Sign up", new_user_path %>
+    <%= link_to "Sign in", signin_path %>
+  </nav>
 
 <%= yield %>
 
