@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       redirect_to root_path
     else
       flash[:error] = "Sorry."
-      redner :new
+      render :new
     end
   end
 end

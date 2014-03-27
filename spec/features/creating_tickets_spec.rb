@@ -4,7 +4,7 @@ feature "Creating Tickets" do
 
   before do
     project = FactoryGirl.create(:project)
-    user = FactoryGirl.create(:user)
+    user = FactoryGirl.create(:user, email: "bob@example.com")
 
     visit '/'
     click_link project.name

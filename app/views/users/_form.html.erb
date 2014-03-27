@@ -30,11 +30,6 @@
     <%= f.password_field :password %>
   </p>
 
-  <p>
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </p>
-
   <%= f.submit (@user.new_record? ? "Sign up" : "Update Profile") %>
 <% end %>
 

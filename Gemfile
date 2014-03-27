@@ -46,6 +46,8 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 group :test, :development do
   gem 'rspec-rails', "~>2.14"
+  gem 'pry-nav'
+  gem 'pry'
 end
 
 group :test do
