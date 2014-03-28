@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'bootstrap-sass'
+gem 'therubyracer', :platform => :ruby
+gem 'less-rails'
+
+gem 'bootstrap-on-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'

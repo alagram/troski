@@ -13,20 +13,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav>
-    <% if current_user %>
-      Signed in as <%= current_user.email %>
-      <%= link_to "Sign out", signout_path, method: :delete %>
-      <%= admins_only do %>
-        <%= link_to "Admin", admin_root_path %>
-      <% end %>
-    <% else %>
-      <%= link_to "Sign up", new_user_path %>
-      <%= link_to "Sign in", signin_path %>
-    <% end %>
-  </nav>
+  <div class="container">
+    <div class="row">
+      <nav>
+        <% if current_user %>
+          Signed in as <%= current_user.email %>
+          <%= link_to "Sign out", signout_path, method: :delete %>
+          <%= admins_only do %>
+            <%= link_to "Admin", admin_root_path %>
+          <% end %>
+        <% else %>
+          <%= link_to "Sign up", new_user_path %>
+          <%= link_to "Sign in", signin_path %>
+        <% end %>
+      </nav>
+    </div>
+  </div>
 
-<%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 
 <% flash.each do |key, value| %>
   <div class='flash' id='<%= key %>'>
