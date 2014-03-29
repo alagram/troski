@@ -61,3 +61,5 @@ group :test do
 end
 
 gem 'cancan', '~> 1.6.10'
+
+gem 'carrierwave'
