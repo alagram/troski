@@ -24,5 +24,4 @@
 //= require bootstrap/scrollspy
 //= require bootstrap/tab
 //= require bootstrap/transition
-//= require turbolinks
 //= require_tree .
