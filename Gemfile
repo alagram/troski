@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'therubyracer', :platform => :ruby
 gem 'less-rails'
 
+gem 'bootstrap_form', :git => "git://github.com/bootstrap-ruby/rails-bootstrap-forms"
+
 gem 'bootstrap-on-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

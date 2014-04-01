@@ -21,4 +21,8 @@ Trotromate::Application.routes.draw do
   end
 
   resources :files
+
+  resources :tickets do
+    resources :comments
+  end
 end

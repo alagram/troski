@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/bootstrap-ruby/rails-bootstrap-forms
+  revision: 606f987bdc94743d204d3522bf186b74e27c0ed6
+  specs:
+    bootstrap_form (2.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -180,6 +186,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (~> 3.1.2)
   bootstrap-on-rails
+  bootstrap_form!
   cancan (~> 1.6.10)
   capybara (= 2.1.0)
   carrierwave

@@ -1,0 +1,8 @@
+<%= div_for(comment) do %>
+  <blockquote class="blockquote-reverse">
+    <%= simple_format(comment.text) %>
+    <footer>
+      <%= comment.user %>
+    </footer>
+  </blockquote>
+<% end %>
