@@ -18,6 +18,7 @@ Trotromate::Application.routes.draw do
 
       put 'permissions', to: 'permissions#set', as: 'set_permissions'
     end
+    resources :states, only: [:index, :new, :create]
   end
 
   resources :files

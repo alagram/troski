@@ -1,0 +1,7 @@
+<%= bootstrap_form_for [:admin, @state], layout: :inline do |f| %>
+  <p>
+    <%= f.text_field :name %>
+  </p>
+
+  <%= f.submit %>
+<% end %>
