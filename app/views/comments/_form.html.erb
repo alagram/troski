@@ -5,6 +5,11 @@
     <%= f.text_area :text, rows: 4, class: "col-sm-10" %>
   </p>
 
+  <p>
+    <%= f.select :state_id, @states.map { |s| [s.name, s.id] }, selected: @ticket.state_id %>
+  </p>
+  <br>
+
   <%= f.submit %>
 
 <% end %>

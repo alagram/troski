@@ -9,5 +9,7 @@ class User < ActiveRecord::Base
 
   has_many :permissions
 
+  validates_uniqueness_of :email
+
 
 end
