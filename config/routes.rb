@@ -30,5 +30,10 @@ Trotromate::Application.routes.draw do
 
   resources :tickets do
     resources :comments
+    resources :tags, only: [:remove] do
+      member do
+        delete :remove
+      end
+    end
   end
 end
