@@ -61,8 +61,10 @@ group :test do
   gem 'factory_girl_rails'
   gem 'selenium-webdriver', '~> 2.41.0'
   gem 'database_cleaner', '~> 1.0.1'
+  gem 'email_spec'
 end
 
 gem 'cancan', '~> 1.6.10'
 
 gem 'carrierwave'
+gem 'rails-observers'
