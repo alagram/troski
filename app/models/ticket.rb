@@ -10,6 +10,8 @@ class Ticket < ActiveRecord::Base
   accepts_nested_attributes_for :assets
   has_many :comments
   has_and_belongs_to_many :tags
+  has_and_belongs_to_many :watchers, join_table: "ticket_watchers",
+                                    class_name: "User"
   belongs_to :state
 
   attr_accessor :tag_names
