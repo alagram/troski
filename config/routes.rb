@@ -42,6 +42,6 @@ Trotromate::Application.routes.draw do
   end
 
   namespace :api do
-    resources :tickets
+    resources :tickets, only: [:index, :show, :create]
   end
 end
